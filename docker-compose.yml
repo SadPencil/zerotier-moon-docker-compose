@@ -3,6 +3,7 @@ services:
   zerotier-moon:
     image: seedgou/zerotier-moon:latest
     container_name: zerotier-moon
+    # where '1.2.3.4' is your IPv4 address
     command: -4 1.2.3.4 -p 9993
     ports:
       - '9993:9993/udp'
